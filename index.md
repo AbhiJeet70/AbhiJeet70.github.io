@@ -7,9 +7,10 @@ I am a **Graduate Research Assistant** and **Interim Secretary** at **Brock Univ
 ### Graduate Research Assistant, **Brock CS Department**  
 _Ongoing_
 
-- Ongoing research in **Federated Learning** and **Knowledge Graph Embedding**.
-- Leading the integration of **federated learning techniques** with knowledge graph embedding to improve collaboration between decentralized data sources.
-- Working on finding the most efficient synergy between federated learning algorithms and **Graph Neural Networks (GNNs)** to enhance model accuracy and efficiency.
+- Ongoing research in **Graph Neural Networks (GNN)**, **Federated Learning with Graph Data**, and the **Robustness of GNN**.
+- Actively contributing to a cutting-edge research project under the guidance of my thesis supervisor, leading the investigation of **backdoor attacks** on critical infrastructure, such as **EV charging stations** and **airports**, using GNNs.
+- Currently focused on improving the robustness of GNNs and evaluating federated learning algorithms to enhance model accuracy and efficiency in decentralized environments.
+
 
 ### Interim Secretary, **Graduate Math and Science Students Brock University (GRAMSS)**  
 _Ongoing_
