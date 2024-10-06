@@ -29,35 +29,11 @@ h3 {
 
 /* Image Styling */
 .profile-picture {
-    width: 180px; /* Adjusted size for a moderate square image */
+    width: 180px; /* Moderate square image */
     height: 180px; /* Same as width for a square shape */
-    border-radius: 10%; /* Slightly rounded corners for a softer look */
-    border: 4px solid #fff; /* White border for a clean appearance */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Softer shadow */
-}
-
-/* Hover Effect */
-.profile-picture:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
-    border-color: #007BFF; /* Change border color on hover for emphasis */
-}
-
-/* Rotate Animation */
-@keyframes rotateZoom {
-    0% {
-        transform: scale(1) rotate(0deg);
-    }
-    50% {
-        transform: scale(1.05) rotate(3deg);
-    }
-    100% {
-        transform: scale(1) rotate(0deg);
-    }
-}
-
-/* Applying Animation on Load */
-.animated {
-    animation: rotateZoom 2s ease-in-out infinite; /* Gentle zoom and rotation animation */
+    border-radius: 0%; /* No rounding for a perfect square */
+    border: none; /* No border for a clean look */
+    box-shadow: none; /* No shadow for simplicity */
 }
 
 /* Section Styling */
@@ -137,4 +113,3 @@ footer {
 .social-links a:hover {
     color: #0077b5; /* Change color on hover */
 }
-
