@@ -3,6 +3,25 @@
 
 ![It's Me](Images/professional_DP.jpg){: .profile-picture .fade-in}
 
+<!-- Social Media Links Section -->
+<div class="social-links">
+    {% if site.social_links.linkedin %}
+        <a href="{{ site.social_links.linkedin }}" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    {% endif %}
+    {% if site.social_links.github %}
+        <a href="{{ site.social_links.github }}" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    {% endif %}
+    {% if site.social_links.email %}
+        <a href="{{ site.social_links.email }}" target="_blank" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    {% endif %}
+</div>
+
 I am a **Graduate Research Assistant** and **Interim Secretary** at **Brock University**, actively working on cutting-edge research in **Federated Learning** and **Knowledge Graph Embedding**. I have a strong background in machine learning, data science, and software development, and I enjoy contributing to open-source projects and collaborating on innovative solutions.
 
 ## Experience
