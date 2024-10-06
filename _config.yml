@@ -1,5 +1,47 @@
-title: My Portfolio
-description: "My Data Science Journey"
+# Site settings
+title: "My Portfolio"
+description: "Showcase of my research, projects, and skills"
+baseurl: "" 
+url: "https://AbhiJeet70.github.io" 
+author: "Abhijeet Dhali"
+
+# Social media links (optional)
+social_links:
+  linkedin: "https://www.linkedin.com/in/abhijeet-dhali"
+  github: "https://github.com/AbhiJeet70"
+  email: "mailto:abhi041096@gmail.com"
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Theme settings
 theme: minima
-author: Abhijeet Dhali
-email: abhi041096@gmail.com
+
+# Customize theme appearance
+minima:
+  sidebar:
+    sticky: true # make the sidebar always visible
+  social_links:
+    github: "https://github.com/AbhiJeet70"
+    linkedin: "https://linkedin.com/in/abhijeet-dhali"
+    email: "abhi041096@gmail.com"
+
+# Plugins
+plugins:
+  - jekyll-feed   # RSS feed plugin
+  - jekyll-seo-tag # SEO plugin for meta tags
+
+# SEO settings
+jekyll-seo-tag: true
+
+# Build settings
+destination: _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+
