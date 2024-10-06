@@ -1,7 +1,3 @@
----
-layout: default
-title: "Abhijeet Dhali"
----
 
 ![It's Me](Images/professional_DP.jpg)
 
