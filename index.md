@@ -27,14 +27,12 @@
 
 I am a **Graduate Research Assistant** and **Interim Secretary** at **Brock University**, actively working on cutting-edge research in **Federated Learning** and **Knowledge Graph Embedding**. I have a strong background in machine learning, data science, and software development, and I enjoy contributing to open-source projects and collaborating on innovative solutions.
 
-<div class="floating-data" style="top: 10%; left: 20%;">
-    <img src="path/to/rocket-icon.svg" alt="Rocket" />
-</div>
+
 <div class="floating-data" style="top: 30%; left: 70%;">
-    <img src="path/to/data-icon.svg" alt="Data" />
+    <img src="Images/data.svg" alt="Data" />
 </div>
 <div class="floating-data" style="top: 50%; left: 40%;">
-    <img src="path/to/graph-icon.svg" alt="Graph" />
+    <img src="Images/graph.svg" alt="Graph" />
 </div>
 
 
