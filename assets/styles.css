@@ -1,50 +1,49 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background for contrast */
-    color: #333; /* Darker text for better readability */
-    line-height: 1.6; /* Increased line-height for better readability */
-    position: relative; /* For positioning animations */
-    overflow: hidden; /* Hide overflowing animations */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Header Styles */
 h1, h2, h3 {
-    font-family: 'Arial', sans-serif; /* Consistent font for headers */
-    color: #007BFF; /* Primary color for headers */
-    margin: 0.5em 0; /* Spacing around headers */
+    font-family: 'Arial', sans-serif;
+    color: #007BFF;
+    margin: 0.5em 0;
 }
 
 h1 {
-    font-size: 2.5em; /* Size for main title */
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 2em; /* Size for section titles */
+    font-size: 2em;
 }
 
 h3 {
-    font-size: 1.5em; /* Size for sub-section titles */
+    font-size: 1.5em;
 }
 
-/* Image Styling */
 .profile-picture {
-    width: 180px; /* Moderate square image */
-    height: 180px; /* Same as width for a square shape */
-    border-radius: 10%; /* Slightly rounded corners for a softer look */
-    border: 4px solid #fff; /* White border for a clean appearance */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    width: 180px;
+    height: 180px;
+    border-radius: 10%;
+    border: 4px solid #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Hover Effect */
 .profile-picture:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
-    border-color: #007BFF; /* Change border color on hover for emphasis */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-color: #007BFF;
 }
 
-/* Flying Data Animation */
+.floating-data {
+    position: absolute;
+    animation: flyData 10s linear infinite;
+    width: 50px;
+}
+
 @keyframes flyData {
     0% {
         transform: translateY(100vh) rotate(0deg);
@@ -54,87 +53,59 @@ h3 {
     }
 }
 
-/* Floating Data Icons */
-.floating-data {
-    position: absolute; /* Absolute positioning for floating effect */
-    animation: flyData 10s linear infinite; /* Continuous floating animation */
-    width: 50px; /* Icon size */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-/* Section Styling */
+.social-links a {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0077b5;
+}
+
 section {
-    background: white; /* White background for sections */
-    border-radius: 10px; /* Rounded corners for sections */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for sections */
-    padding: 20px; /* Padding for sections */
-    margin: 20px; /* Margin between sections */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
 }
 
-/* Skill Table */
-table {
-    width: 100%; /* Full-width table */
-    border-collapse: collapse; /* Remove spacing between cells */
-    margin: 20px 0; /* Space around the table */
-}
-
-th, td {
-    padding: 12px; /* Cell padding */
-    text-align: left; /* Left align text */
-    border-bottom: 1px solid #ddd; /* Divider for rows */
-}
-
-th {
-    background-color: #f4f4f4; /* Header background */
-    font-weight: bold; /* Bold header text */
-}
-
-/* Footer Styles */
 footer {
-    text-align: center; /* Centered footer */
-    padding: 20px 0; /* Padding for footer */
-    background-color: #007BFF; /* Primary color for footer */
-    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #007BFF;
+    color: white;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     body {
-        font-size: 90%; /* Slightly smaller text on smaller screens */
+        font-size: 90%;
     }
 
     .profile-picture {
-        width: 150px; /* Smaller image on mobile */
-        height: 150px; /* Same as width for a square shape */
+        width: 150px;
+        height: 150px;
     }
 
     h1 {
-        font-size: 2em; /* Smaller title on mobile */
+        font-size: 2em;
     }
 
     h2 {
-        font-size: 1.75em; /* Smaller section title on mobile */
+        font-size: 1.75em;
     }
 
     h3 {
-        font-size: 1.25em; /* Smaller sub-section title on mobile */
+        font-size: 1.25em;
     }
-}
-
-.social-links {
-    display: flex;
-    gap: 15px; /* Spacing between icons */
-    margin-top: 10px; /* Space above the icons */
-}
-
-.social-links a {
-    color: #333; /* Default color */
-    font-size: 24px; /* Size of the icons */
-    transition: color 0.3s; /* Transition effect */
-}
-
-.social-links a:hover {
-    color: #0077b5; /* Change color on hover */
 }
