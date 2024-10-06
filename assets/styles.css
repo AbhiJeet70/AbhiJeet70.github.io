@@ -123,3 +123,20 @@ footer {
         font-size: 1.25em; /* Smaller sub-section title on mobile */
     }
 }
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+    margin-top: 10px; /* Space above the icons */
+}
+
+.social-links a {
+    color: #333; /* Default color */
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.social-links a:hover {
+    color: #0077b5; /* Change color on hover */
+}
+
