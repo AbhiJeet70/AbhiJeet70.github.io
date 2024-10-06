@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -5,8 +6,11 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Header Styles */
 h1, h2, h3 {
     font-family: 'Arial', sans-serif;
     color: #007BFF;
@@ -25,6 +29,7 @@ h3 {
     font-size: 1.5em;
 }
 
+/* Image Styling */
 .profile-picture {
     width: 180px;
     height: 180px;
@@ -33,17 +38,13 @@ h3 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Hover Effect */
 .profile-picture:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     border-color: #007BFF;
 }
 
-.floating-data {
-    position: absolute;
-    animation: flyData 10s linear infinite;
-    width: 50px;
-}
-
+/* Flying Data Animation */
 @keyframes flyData {
     0% {
         transform: translateY(100vh) rotate(0deg);
@@ -53,22 +54,14 @@ h3 {
     }
 }
 
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
+/* Floating Data Icons */
+.floating-data {
+    position: absolute;
+    animation: flyData 10s linear infinite;
+    width: 50px;
 }
 
-.social-links a {
-    color: #333;
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #0077b5;
-}
-
+/* Section Styling */
 section {
     background: white;
     border-radius: 10px;
@@ -77,6 +70,25 @@ section {
     margin: 20px;
 }
 
+/* Skill Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 20px 0;
@@ -87,6 +99,7 @@ footer {
     width: 100%;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     body {
         font-size: 90%;
@@ -108,4 +121,20 @@ footer {
     h3 {
         font-size: 1.25em;
     }
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0077b5;
 }
