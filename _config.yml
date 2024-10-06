@@ -5,9 +5,7 @@ baseurl: ""
 url: "https://abhijeet70.github.io" 
 author: "Abhijeet Dhali"
 
-
-
-# Social media links (optional)
+# Social media links
 social_links:
   linkedin: "https://www.linkedin.com/in/abhijeet-dhali"
   github: "https://github.com/AbhiJeet70"
@@ -24,10 +22,6 @@ theme: minima
 minima:
   sidebar:
     sticky: true # make the sidebar always visible
-  social_links:
-    github: "https://github.com/AbhiJeet70"
-    linkedin: "https://linkedin.com/in/abhijeet-dhali"
-    email: "abhi041096@gmail.com"
 
 # Plugins
 plugins:
@@ -45,5 +39,3 @@ exclude:
   - node_modules
   - vendor
   - README.md
-
-
