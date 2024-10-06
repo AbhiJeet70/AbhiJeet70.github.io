@@ -1,9 +1,12 @@
 # Site settings
-title: "My Portfolio"
+title: "Abhijeet Dhali"
 description: "My AI Journey"
 baseurl: "" 
 url: "https://abhijeet70.github.io" 
 author: "Abhijeet Dhali"
+
+![It's Me]()
+
 
 # Social media links (optional)
 social_links:
