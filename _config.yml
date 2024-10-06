@@ -28,9 +28,6 @@ plugins:
   - jekyll-feed   # RSS feed plugin
   - jekyll-seo-tag # SEO plugin for meta tags
 
-# SEO settings
-jekyll-seo-tag: true
-
 # Build settings
 destination: _site
 exclude:
