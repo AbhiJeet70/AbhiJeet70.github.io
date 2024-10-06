@@ -1,4 +1,7 @@
-![It's Me](Images/professional_DP.jpg)
+
+<link rel="stylesheet" href="assets/styles.css"> 
+
+![It's Me](Images/professional_DP.jpg){: .profile-picture .fade-in}
 
 I am a **Graduate Research Assistant** and **Interim Secretary** at **Brock University**, actively working on cutting-edge research in **Federated Learning** and **Knowledge Graph Embedding**. I have a strong background in machine learning, data science, and software development, and I enjoy contributing to open-source projects and collaborating on innovative solutions.
 
