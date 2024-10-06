@@ -4,7 +4,7 @@
 <!-- Include Font Awesome for social icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-![It's Me](Images/professional_DP.jpg){: .profile-picture .fade-in}
+![It's Me](Images/professional_DP.jpg){: .profile-picture}
 
 <!-- Social Media Links Section -->
 <div class="social-links">
