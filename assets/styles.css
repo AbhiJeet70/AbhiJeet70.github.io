@@ -80,6 +80,41 @@ body {
     text-align: center; /* Center text on mobile */
 }
 
+/* Graphics Section */
+.graphics {
+    background: #f0f2f5;
+    padding: 50px 0;
+}
+
+.graphics-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
+}
+
+.graphic-item {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text */
+}
+
+.graphic-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsive Styles for Graphics Section */
+@media (max-width: 768px) {
+    .graphics-content {
+        grid-template-columns: 1fr; /* Stack items vertically on mobile */
+    }
+}
+
+
 .profile-picture {
     border-radius: 50%;
     width: 150px; /* Adjusted for better mobile view */
