@@ -1,4 +1,4 @@
-
+<!-- It's Me -->
 ![It's Me](Images/professional_DP.jpg){:class="profile-picture"}
 
 <div class="social-links">
@@ -8,7 +8,7 @@
     <a href="{{ site.social_links.github }}" target="_blank" aria-label="GitHub">
         <i class="fab fa-github"></i>
     </a>
-    <a href="{{ site.social_links.email }}" target="_blank" aria-label="Email">
+    <a href="mailto:{{ site.social_links.email }}" target="_blank" aria-label="Email">
         <i class="fas fa-envelope"></i>
     </a>
 </div>
@@ -19,7 +19,6 @@
 <div class="floating-data" style="top: 50%; left: 40%;">
     <img src="Images/graph.svg" alt="Graph" />
 </div>
-
 
 <!-- Navigation Bar -->
 <nav class="navbar">
@@ -36,22 +35,20 @@
 <section id="about">
     <h2>About Me</h2>
     <img src="Images/professional_DP.jpg" class="profile-picture" alt="Profile Picture">
-    <p>I am a **Graduate Research Assistant** and **Interim Secretary** at **Brock University** working on research in **Federated Learning** and **Knowledge Graph Embedding**. I have experience in machine learning, data science, and software development, and I actively contribute to open-source projects.</p>
+    <p>I am a <strong>Graduate Research Assistant</strong> and <strong>Interim Secretary</strong> at <strong>Brock University</strong> working on research in <strong>Federated Learning</strong> and <strong>Knowledge Graph Embedding</strong>. I have experience in machine learning, data science, and software development, and I actively contribute to open-source projects.</p>
 </section>
 
 <!-- Experience Section -->
 <section id="experience">
     <h2>Experience</h2>
     <h3>Graduate Research Assistant, Brock CS Department</h3>
-    <p>Ongoing research on **Graph Neural Networks (GNN)** and **Federated Learning** with emphasis on improving the robustness and security of decentralized models.</p>
+    <p>Ongoing research on <strong>Graph Neural Networks (GNN)</strong> and <strong>Federated Learning</strong> with emphasis on improving the robustness and security of decentralized models.</p>
 
     <h3>Interim Secretary, Graduate Math and Science Students Brock University (GRAMSS)</h3>
-    <p>Organized meetings, supported faculty seminars, and contributed to planning the **FMS GRaD Conference 2024**.</p>
+    <p>Organized meetings, supported faculty seminars, and contributed to planning the <strong>FMS GRaD Conference 2024</strong>.</p>
 
     <h3>Research Project, Undergraduate Thesis</h3>
-    <p>Developed a **GPS-Guided Autonomous Drone** for delivery purposes.</p>
-
-    <!-- Other experience details here -->
+    <p>Developed a <strong>GPS-Guided Autonomous Drone</strong> for delivery purposes.</p>
 </section>
 
 <!-- Skills Section -->
@@ -70,7 +67,6 @@
             <td>Python Libraries</td>
             <td>NumPy, Pandas, Matplotlib, Scikit-Learn, Pytorch, Torch Geometric</td>
         </tr>
-        <!-- Other skills details here -->
     </table>
 </section>
 
@@ -78,10 +74,10 @@
 <section id="education">
     <h2>Education</h2>
     <h3>Master of Science, Computer Science</h3>
-    <p>**Brock University**, September 2023 – September 2025</p>
+    <p><strong>Brock University</strong>, September 2023 – September 2025</p>
 
     <h3>Bachelor of Science, Computer Science and Engineering</h3>
-    <p>**Chittagong University of Engineering and Technology**, February 2016 – September 2022</p>
+    <p><strong>Chittagong University of Engineering and Technology</strong>, February 2016 – September 2022</p>
 </section>
 
 <!-- Contact Section -->
@@ -102,4 +98,3 @@
         </a>
     </div>
 </section>
-
