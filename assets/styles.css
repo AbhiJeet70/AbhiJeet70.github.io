@@ -13,10 +13,10 @@ body {
 
 /* Container */
 .container {
-    width: 85%;
+    width: 90%; /* Slightly increased for mobile */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 /* Navigation Bar */
@@ -85,6 +85,7 @@ body {
     width: 150px; /* Adjusted for better mobile view */
     height: 150px;
     object-fit: cover;
+    margin-bottom: 20px; /* Added margin for better spacing */
 }
 
 .social-links {
@@ -195,6 +196,7 @@ footer p {
 
     .about-content {
         flex-direction: column; /* Stack profile picture and text */
+        align-items: center; /* Center items */
     }
 
     .about-text {
@@ -218,6 +220,10 @@ footer p {
     .skills-content ul {
         padding-left: 20px; /* Add padding for better readability */
     }
+
+    .experience-item {
+        margin: 10px 0; /* Add margin for spacing */
+    }
 }
 
 @media (max-width: 480px) {
@@ -238,5 +244,13 @@ footer p {
 
     .experience-item h3 {
         font-size: 1.2rem; /* Smaller experience item title */
+    }
+
+    .skills-content li {
+        font-size: 0.9rem; /* Smaller font size for skills */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Smaller footer text */
     }
 }
