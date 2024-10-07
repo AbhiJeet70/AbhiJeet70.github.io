@@ -72,17 +72,18 @@ body {
 .about-content {
     display: flex;
     align-items: center;
+    flex-direction: column; /* Center elements on mobile */
 }
 
 .about-text {
     max-width: 600px;
-    margin-left: 30px;
+    text-align: center; /* Center text on mobile */
 }
 
 .profile-picture {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px; /* Adjusted for better mobile view */
+    height: 150px;
     object-fit: cover;
 }
 
@@ -108,7 +109,7 @@ body {
 
 .experience-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
     gap: 20px;
 }
 
@@ -174,4 +175,68 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start; /* Align nav items to the start */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Margin between links */
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack profile picture and text */
+    }
+
+    .about-text {
+        text-align: center; /* Center text for mobile */
+    }
+
+    .experience-content {
+        grid-template-columns: 1fr; /* Stack items vertically on mobile */
+    }
+
+    .profile-picture {
+        width: 120px; /* Smaller image for mobile */
+        height: 120px;
+    }
+
+    .social-links a {
+        margin: 0 10px; /* Adjust margin for mobile */
+        font-size: 1.25rem; /* Smaller icons */
+    }
+
+    .skills-content ul {
+        padding-left: 20px; /* Add padding for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .brand {
+        font-size: 1.2rem; /* Smaller brand name */
+    }
+
+    .navbar .nav-links a {
+        font-size: 0.9rem; /* Smaller nav link font */
+    }
+
+    .about h2,
+    .experience h2,
+    .skills h2,
+    .education h2 {
+        font-size: 1.5rem; /* Adjust heading sizes */
+    }
+
+    .experience-item h3 {
+        font-size: 1.2rem; /* Smaller experience item title */
+    }
 }
