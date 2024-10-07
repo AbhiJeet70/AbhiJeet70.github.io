@@ -9,7 +9,6 @@
     <title>Abhijeet Dhali - Personal Portfolio</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Menu Tray Styles */
@@ -20,19 +19,21 @@
             position: fixed;
             top: 15px;
             left: 15px;
-            z-index: 1001; /* Above everything else */
+            z-index: 1001;
         }
 
         .menu-tray {
             position: fixed;
             top: 0;
-            left: -250px; /* Hide off-screen */
-            width: 250px;
+            left: -300px; /* Hide off-screen */
+            width: 300px; /* Adjusted width */
             height: 100%;
             background: #282c34;
             transition: left 0.3s ease;
             z-index: 1000;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            padding: 20px; /* Added padding */
+            overflow-y: auto; /* Allow scrolling if necessary */
         }
 
         .menu-tray.open {
@@ -43,7 +44,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px;
             color: #61dafb;
         }
 
@@ -55,7 +55,8 @@
 
         .nav-links {
             list-style-type: none;
-            padding: 20px 0;
+            padding: 0; /* Reset padding */
+            margin-top: 20px; /* Space between header and links */
         }
 
         .nav-links li {
@@ -117,7 +118,7 @@
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#education" onclick="toggleMenu()">Education</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            <li><a href="https://your-original-link.com" target="_blank" onclick="toggleMenu()">Home</a></li> <!-- Home button -->
+            <li><a href="https://your-original-link.com" target="_blank" onclick="toggleMenu()">Home</a></li>
         </ul>
     </nav>
 </div>
@@ -170,7 +171,6 @@
     <div class="container">
         <h2>Experience</h2>
         <div class="experience-content">
-            <!-- Experience Item 1 -->
             <div class="experience-item">
                 <h3>Graduate Research Assistant, <strong>Brock CS Department</strong></h3>
                 <p>Ongoing research in <strong>Graph Neural Networks (GNN)</strong>, <strong>Federated Learning with Graph Data</strong>, and the <strong>Robustness of GNN</strong>.</p>
@@ -178,7 +178,6 @@
                 <p>Focusing on improving the robustness of GNNs and evaluating federated learning algorithms for decentralized environments.</p>
             </div>
 
-            <!-- Experience Item 2 -->
             <div class="experience-item">
                 <h3>Interim Secretary, <strong>Graduate Math and Science Students Brock University (GRAMSS)</strong></h3>
                 <p>Organizer of <strong>FMS GRaD Conference 2024</strong> at Brock University.</p>
@@ -186,28 +185,24 @@
                 <p>Contributed to strategic planning and collaboration initiatives for the GRAMSS community.</p>
             </div>
 
-            <!-- Experience Item 3 -->
             <div class="experience-item">
                 <h3>Research Project, <strong>Undergraduate Thesis</strong></h3>
                 <p><strong>March 2020 – Dec 2021</strong></p>
                 <p>Developed a <strong>GPS-Guided Autonomous Drone</strong> for delivery purposes using a smartphone app for GPS tracking.</p>
             </div>
 
-            <!-- Experience Item 4 -->
             <div class="experience-item">
                 <h3>Machine Learning Project, <strong>Undergraduate Course Project</strong></h3>
                 <p><strong>April 2020 – April 2021</strong></p>
                 <p>Created a <strong>Machine Learning-based Diabetes Prediction Web Application</strong> using supervised learning and Artificial Neural Networks (ANN).</p>
             </div>
 
-            <!-- Experience Item 5 -->
             <div class="experience-item">
                 <h3>Industrial Trainee, <strong>Grameenphone Ltd.</strong></h3>
                 <p><strong>August 2019 – September 2019, Dhaka</strong></p>
                 <p>Gained experience in <strong>Radio Planning</strong>, <strong>Network Security</strong>, and <strong>IP Architecture</strong> (GSM, 3G, 4G, VoLTE).</p>
             </div>
 
-            <!-- Experience Item 6 -->
             <div class="experience-item">
                 <h3>Training Participator, <strong>Contessa BD</strong></h3>
                 <p><strong>August 2019, Chittagong</strong></p>
