@@ -11,7 +11,7 @@
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Menu Tray Styles */
+        /* Menu Icon Styles */
         .menu-icon {
             font-size: 24px;
             color: white;
@@ -22,6 +22,7 @@
             z-index: 1001;
         }
 
+        /* Menu Tray Styles */
         .menu-tray {
             position: fixed;
             top: 0;
@@ -61,17 +62,22 @@
 
         .nav-links li {
             margin: 15px 0;
+            transition: background 0.3s;
         }
 
         .nav-links a {
             color: #ffffff;
             text-decoration: none;
             font-size: 1.2rem;
-            transition: color 0.3s;
+            display: block; /* Make links block elements */
+            padding: 10px; /* Add padding for a button-like feel */
+            border-radius: 5px; /* Rounded corners */
+            transition: color 0.3s, background 0.3s;
         }
 
         .nav-links a:hover {
-            color: #61dafb;
+            background: #61dafb; /* Change background on hover */
+            color: #282c34; /* Dark text on hover */
         }
 
         /* Additional styling for the rest of your site */
@@ -194,13 +200,14 @@
             <div class="experience-item">
                 <h3>Machine Learning Project, <strong>Undergraduate Course Project</strong></h3>
                 <p><strong>April 2020 – April 2021</strong></p>
-                <p>Created a <strong>Machine Learning-based Diabetes Prediction Web Application</strong> using supervised learning and Artificial Neural Networks (ANN).</p>
+                <p>Created a <strong>Machine Learning-based Diabetes Prediction Web Application</strong> using Flask and Python.</p>
             </div>
 
             <div class="experience-item">
-                <h3>Industrial Trainee, <strong>Grameenphone Ltd.</strong></h3>
-                <p><strong>August 2019 – September 2019, Dhaka</strong></p>
-                <p>Gained experience in <strong>Radio Planning</strong>, <strong>Network Security</strong>, and <strong>IP Architecture</strong> (GSM, 3G, 4G, VoLTE).</p>
+                <h3>Intern, <strong>Telecom Company XYZ</strong></h3>
+                <p><strong>June 2021 – August 2021</strong></p>
+                <p>Worked on <strong>Data Analytics</strong> for <strong>5G Network Performance</strong> using <strong>SQL</strong> and <strong>Python</strong>.</p>
+                <p>Analyzed performance metrics for networks such as <strong>GSM, 3G, 4G, VoLTE</strong>.</p>
             </div>
 
             <div class="experience-item">
