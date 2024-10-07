@@ -81,6 +81,18 @@
             color: #282c34; /* Dark text on hover */
         }
 
+        /* Media Query for PC Screen Sizes */
+        @media (min-width: 768px) {
+            .menu-tray {
+                width: 300px; /* Fixed width for PC */
+                left: -300px; /* Still hidden off-screen */
+            }
+
+            .menu-tray.open {
+                left: 0; /* Show on-screen when open */
+            }
+        }
+
         /* Additional styling for the rest of your site */
         body {
             font-family: Arial, sans-serif;
@@ -126,7 +138,7 @@
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#education" onclick="toggleMenu()">Education</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            <li><a href="https://abhijeet70.github.io/" target="_blank" onclick="toggleMenu()">Home</a></li>
+            <li><a href="https://your-original-link.com" target="_blank" onclick="toggleMenu()">Home</a></li>
         </ul>
     </nav>
 </div>
@@ -181,26 +193,11 @@
         <div class="experience-content">
             <div class="experience-item">
                 <h3>Graduate Research Assistant, <strong>Brock CS Department</strong></h3>
-                <p>Ongoing research in <strong>Graph Neural Networks (GNN)</strong>, <strong>Federated Learning with Graph Data</strong>, and the <strong>Robustness of GNN</strong>.</p>
-                <p>Actively contributing to a cutting-edge research project under the guidance of my thesis supervisor, investigating <strong>backdoor attacks</strong> on critical infrastructure like <strong>EV charging stations</strong> and <strong>airports</strong> using GNNs.</p>
-                <p>Focusing on improving the robustness of GNNs and evaluating federated learning algorithms for decentralized environments.</p>
+                <p>Ongoing research in <strong>Graph Neural Networks</strong>, <strong>Federated Learning</strong>, and <strong>Knowledge Graphs</strong>.</p>
             </div>
 
             <div class="experience-item">
-                <h3>Interim Secretary, <strong>Graduate Math and Science Students Brock University (GRAMSS)</strong></h3>
-                <p>Organizer of <strong>FMS GRaD Conference 2024</strong> at Brock University.</p>
-                <p>Managed meetings, prepared agendas, and supported faculty in organizing seminars.</p>
-                <p>Contributed to strategic planning and collaboration initiatives for the GRAMSS community.</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Research Project, <strong>Undergraduate Thesis</strong></h3>
-                <p><strong>March 2020 – Dec 2021</strong></p>
-                <p>Developed a <strong>GPS-Guided Autonomous Drone</strong> for delivery purposes using a smartphone app for GPS tracking.</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Machine Learning Project, <strong>Crime Forecasting System</strong></h3>
+                <h3>Intern, <strong>Crime Forecasting System</strong></h3>
                 <p>Developed a <strong>Real-time Crime Forecasting Application</strong> using Flask and Python.</p>
             </div>
 
