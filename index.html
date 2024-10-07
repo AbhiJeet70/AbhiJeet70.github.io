@@ -35,6 +35,8 @@
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
             padding: 20px; /* Added padding */
             overflow-y: auto; /* Allow scrolling if necessary */
+            display: flex; /* Use flex to ensure vertical layout */
+            flex-direction: column; /* Stack items vertically */
         }
 
         .menu-tray.open {
@@ -96,6 +98,7 @@
 
         .section {
             padding: 60px 0;
+            border-bottom: 1px solid #ddd; /* Added separator between sections */
         }
 
         .brand {
@@ -197,8 +200,7 @@
             </div>
 
             <div class="experience-item">
-                <h3>Machine Learning Project, <strong>Undergraduate Course Project</strong></h3>
-                <p><strong>April 2020 – April 2021</strong></p>
+                <h3>Machine Learning Project, <strong>Crime Forecasting System</strong></h3>
                 <p>Developed a <strong>Real-time Crime Forecasting Application</strong> using Flask and Python.</p>
             </div>
 
