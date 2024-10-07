@@ -114,6 +114,36 @@ body {
     }
 }
 
+/* Menu Tray Styles */
+.menu-tray {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Hide off-screen */
+    width: 300px; /* Adjusted width */
+    height: 100%;
+    background: #282c34;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px; /* Added padding */
+    overflow-y: auto; /* Allow scrolling if necessary */
+    display: flex; /* Use flex to ensure vertical layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Media Query for PC Screen Sizes */
+@media (min-width: 768px) {
+    .menu-tray {
+        width: 300px; /* Fixed width for PC */
+        left: -300px; /* Still hidden off-screen */
+    }
+    
+    .menu-tray.open {
+        left: 0; /* Show on-screen when open */
+    }
+}
+
+
 
 .profile-picture {
     border-radius: 50%;
