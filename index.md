@@ -1,5 +1,7 @@
 
-![It's Me](Images/professional_DP.jpg)
+![It's Me](Images/professional_DP.jpg){:class="profile-picture"}
+
+
 
 ## About Me
 
