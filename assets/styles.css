@@ -19,22 +19,6 @@ body {
     margin: 0 auto;
 }
 
-/* Floating Data Icons */
-.floating-data {
-    position: absolute;
-    animation: flyData 10s linear infinite;
-    width: 50px;
-}
-
-@keyframes flyData {
-    0% {
-        transform: translateY(100vh) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-10vh) rotate(360deg);
-    }
-}
-
 /* Navigation Bar */
 .navbar {
     position: fixed;
