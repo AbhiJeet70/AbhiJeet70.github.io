@@ -1,22 +1,4 @@
 
-<div class="social-links">
-    <a href="{{ site.social_links.linkedin }}" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="{{ site.social_links.github }}" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-    </a>
-    <a href="mailto:{{ site.social_links.email }}" target="_blank" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-    </a>
-</div>
-
-<div class="floating-data" style="top: 30%; left: 70%;">
-    <img src="Images/data.svg" alt="Data" />
-</div>
-<div class="floating-data" style="top: 50%; left: 40%;">
-    <img src="Images/graph.svg" alt="Graph" />
-</div>
 
 <!-- Navigation Bar -->
 <nav class="navbar">
