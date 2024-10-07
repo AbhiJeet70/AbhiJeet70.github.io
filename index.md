@@ -1,5 +1,3 @@
-<!-- It's Me -->
-![It's Me](Images/professional_DP.jpg){:class="profile-picture"}
 
 <div class="social-links">
     <a href="{{ site.social_links.linkedin }}" target="_blank" aria-label="LinkedIn">
