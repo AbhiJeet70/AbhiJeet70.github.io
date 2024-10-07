@@ -1,12 +1,6 @@
 
 ![It's Me](Images/professional_DP.jpg){:class="profile-picture"}
 
-
-
-## About Me
-
-I am a **Graduate Research Assistant** and **Interim Secretary** at **Brock University**, actively working on cutting-edge research in **Federated Learning** and **Knowledge Graph Embedding**. I have a strong background in machine learning, data science, and software development, and I enjoy contributing to open-source projects and collaborating on innovative solutions.
-
 <div class="social-links">
     <a href="{{ site.social_links.linkedin }}" target="_blank" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
@@ -26,63 +20,86 @@ I am a **Graduate Research Assistant** and **Interim Secretary** at **Brock Univ
     <img src="Images/graph.svg" alt="Graph" />
 </div>
 
-## Experience
 
-### Graduate Research Assistant, **Brock CS Department**  
-_Ongoing_
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-- Ongoing research in **Graph Neural Networks (GNN)**, **Federated Learning with Graph Data**, and the **Robustness of GNN**.
-- Actively contributing to a cutting-edge research project under the guidance of my thesis supervisor, investigating **backdoor attacks** on critical infrastructure like **EV charging stations** and **airports** using GNNs.
-- Focusing on improving the robustness of GNNs and evaluating federated learning algorithms for decentralized environments.
+<!-- About Me Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <img src="Images/professional_DP.jpg" class="profile-picture" alt="Profile Picture">
+    <p>I am a **Graduate Research Assistant** and **Interim Secretary** at **Brock University** working on research in **Federated Learning** and **Knowledge Graph Embedding**. I have experience in machine learning, data science, and software development, and I actively contribute to open-source projects.</p>
+</section>
 
-### Interim Secretary, **Graduate Math and Science Students Brock University (GRAMSS)**  
-_Ongoing_
+<!-- Experience Section -->
+<section id="experience">
+    <h2>Experience</h2>
+    <h3>Graduate Research Assistant, Brock CS Department</h3>
+    <p>Ongoing research on **Graph Neural Networks (GNN)** and **Federated Learning** with emphasis on improving the robustness and security of decentralized models.</p>
 
-- Organizer of **FMS GRaD Conference 2024** at Brock University.
-- Managed meetings, prepared agendas, and supported faculty in organizing seminars.
-- Contributed to strategic planning and collaboration initiatives for the GRAMSS community.
+    <h3>Interim Secretary, Graduate Math and Science Students Brock University (GRAMSS)</h3>
+    <p>Organized meetings, supported faculty seminars, and contributed to planning the **FMS GRaD Conference 2024**.</p>
 
-### Research Project, **Undergraduate Thesis**  
-_March 2020 – Dec 2021_
+    <h3>Research Project, Undergraduate Thesis</h3>
+    <p>Developed a **GPS-Guided Autonomous Drone** for delivery purposes.</p>
 
-- Developed a **GPS-Guided Autonomous Drone** for delivery purposes using a smartphone app for GPS tracking.
+    <!-- Other experience details here -->
+</section>
 
-### Machine Learning Project, **Undergraduate Course Project**  
-_April 2020 – April 2021_
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <table>
+        <tr>
+            <th>Skill Category</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Programming</td>
+            <td>C, C++, Java, Python</td>
+        </tr>
+        <tr>
+            <td>Python Libraries</td>
+            <td>NumPy, Pandas, Matplotlib, Scikit-Learn, Pytorch, Torch Geometric</td>
+        </tr>
+        <!-- Other skills details here -->
+    </table>
+</section>
 
-- Created a **Machine Learning-based Diabetes Prediction Web Application** using supervised learning and Artificial Neural Networks (ANN).
+<!-- Education Section -->
+<section id="education">
+    <h2>Education</h2>
+    <h3>Master of Science, Computer Science</h3>
+    <p>**Brock University**, September 2023 – September 2025</p>
 
-### Industrial Trainee, **Grameenphone Ltd.**  
-_Aug 2019 – Sep 2019, Dhaka_
+    <h3>Bachelor of Science, Computer Science and Engineering</h3>
+    <p>**Chittagong University of Engineering and Technology**, February 2016 – September 2022</p>
+</section>
 
-- Gained experience in **Radio Planning**, **Network Security**, and **IP Architecture** (GSM, 3G, 4G, VoLTE).
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you’d like to collaborate or inquire about my work, feel free to reach out via the links below:</p>
 
-### Training Participator, **Contessa BD**  
-_August 2019, Chittagong_
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="{{ site.social_links.linkedin }}" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="{{ site.social_links.github }}" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:{{ site.social_links.email }}" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+</section>
 
-- Completed foundational training in **Digital Forensics** and **Cybersecurity Basics**.
-
-## Skills
-
-| **Skill Category**      | **Details**                                                                                                                                 |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| **Programming**          | C, C++, Java, Python                                                                                                                       |
-| **Python Libraries**     | NumPy, Pandas, Matplotlib, Scikit-Learn, NetworkX, Pytorch, Torch Geometric                                                                 |
-| **Web Development**      | HTML, CSS, PHP, Bootstrap, JavaScript, MySQL, Oracle, Node.js, React.js, MongoDB, Apache                                                   |
-| **IDE/Tools**            | VSCode, IntelliJ, CodeBlocks, MATLAB, Cisco Packet Tracer, Anaconda, Jupyter Notebook, NetBeans                                             |
-| **Other**                | Microsoft Office Suite, Git/GitHub, Google Colab, Kaggle, Magnet Axiom, OpenGL                                                             |
-| **Soft Skills**          | Fluent in English, Quick Learner, Passionate about Learning, Time Management                                                               |
-
-## Education
-
-### Master of Science, Computer Science  
-**Brock University, Ongoing**  
-_September 2023 – September 2025_
-
-### Bachelor of Science, Computer Science and Engineering  
-**Chittagong University of Engineering and Technology**  
-_February 2016 – September 2022_
-
----
-
-Thank you for visiting my portfolio! Feel free to reach out for collaboration or inquiries.
