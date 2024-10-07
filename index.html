@@ -7,129 +7,141 @@
     <meta name="keywords" content="Abhijeet Dhali, Portfolio, Machine Learning, GNN, Federated Learning, Research">
     <meta name="author" content="Abhijeet Dhali">
     <title>Abhijeet Dhali - Personal Portfolio</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <div class="container">
+            <div class="brand">Abhijeet Dhali</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="Images/professional_DP.jpg" class="profile-picture" alt="Profile Picture">
-        <p>I am a <strong>Graduate Research Assistant</strong> and <strong>Interim Secretary</strong> at <strong>Brock University</strong>, actively working on cutting-edge research in <strong>Federated Learning</strong> and <strong>Knowledge Graph Embedding</strong>. I have a strong background in machine learning, data science, and software development, and I enjoy contributing to open-source projects and collaborating on innovative solutions.</p>
-
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/abhijeet-dhali" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/AbhiJeet70" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:abhi041096@gmail.com" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <img src="Images/professional_DP.jpg" class="profile-picture" alt="Profile Picture">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am a <strong>Graduate Research Assistant</strong> and <strong>Interim Secretary</strong> at <strong>Brock University</strong>, actively working on cutting-edge research in <strong>Federated Learning</strong> and <strong>Knowledge Graph Embedding</strong>. I have a strong background in machine learning, data science, and software development, and I enjoy contributing to open-source projects and collaborating on innovative solutions.</p>
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abhijeet-dhali" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/AbhiJeet70" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:abhi041096@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div>
-            <h3>Graduate Research Assistant, <strong>Brock CS Department</strong></h3>
-            <p>Ongoing research in <strong>Graph Neural Networks (GNN)</strong>, <strong>Federated Learning with Graph Data</strong>, and the <strong>Robustness of GNN</strong>.</p>
-            <p>Investigating <strong>backdoor attacks</strong> on critical infrastructure like <strong>EV charging stations</strong> and <strong>airports</strong> using GNNs.</p>
-            <p>Focusing on improving the robustness of GNNs and evaluating federated learning algorithms for decentralized environments.</p>
-        </div>
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-content">
+                <!-- Experience Item 1 -->
+                <div class="experience-item">
+                    <h3>Graduate Research Assistant, <strong>Brock CS Department</strong></h3>
+                    <p>Ongoing research in <strong>Graph Neural Networks (GNN)</strong>, <strong>Federated Learning with Graph Data</strong>, and the <strong>Robustness of GNN</strong>.</p>
+                    <p>Actively contributing to a cutting-edge research project under the guidance of my thesis supervisor, investigating <strong>backdoor attacks</strong> on critical infrastructure like <strong>EV charging stations</strong> and <strong>airports</strong> using GNNs.</p>
+                    <p>Focusing on improving the robustness of GNNs and evaluating federated learning algorithms for decentralized environments.</p>
+                </div>
+                
+                <!-- Experience Item 2 -->
+                <div class="experience-item">
+                    <h3>Interim Secretary, <strong>Graduate Math and Science Students Brock University (GRAMSS)</strong></h3>
+                    <p>Organizer of <strong>FMS GRaD Conference 2024</strong> at Brock University.</p>
+                    <p>Managed meetings, prepared agendas, and supported faculty in organizing seminars.</p>
+                    <p>Contributed to strategic planning and collaboration initiatives for the GRAMSS community.</p>
+                </div>
 
-        <div>
-            <h3>Interim Secretary, <strong>Graduate Math and Science Students Brock University (GRAMSS)</strong></h3>
-            <p>Organizer of <strong>FMS GRaD Conference 2024</strong> at Brock University.</p>
-            <p>Managed meetings, prepared agendas, and supported faculty in organizing seminars.</p>
-            <p>Contributed to strategic planning and collaboration initiatives for the GRAMSS community.</p>
-        </div>
+                <!-- Experience Item 3 -->
+                <div class="experience-item">
+                    <h3>Research Project, <strong>Undergraduate Thesis</strong></h3>
+                    <p><strong>March 2020 – Dec 2021</strong></p>
+                    <p>Developed a <strong>GPS-Guided Autonomous Drone</strong> for delivery purposes using a smartphone app for GPS tracking.</p>
+                </div>
 
-        <div>
-            <h3>Research Project, <strong>Undergraduate Thesis</strong></h3>
-            <p>Developed a <strong>GPS-Guided Autonomous Drone</strong> for delivery purposes using a smartphone app for GPS tracking.</p>
-        </div>
+                <!-- Experience Item 4 -->
+                <div class="experience-item">
+                    <h3>Machine Learning Project, <strong>Undergraduate Course Project</strong></h3>
+                    <p><strong>April 2020 – April 2021</strong></p>
+                    <p>Created a <strong>Machine Learning-based Diabetes Prediction Web Application</strong> using supervised learning and Artificial Neural Networks (ANN).</p>
+                </div>
 
-        <div>
-            <h3>Machine Learning Project, <strong>Undergraduate Course Project</strong></h3>
-            <p>Created a <strong>Machine Learning-based Diabetes Prediction Web Application</strong> using supervised learning and Artificial Neural Networks (ANN).</p>
-        </div>
+                <!-- Experience Item 5 -->
+                <div class="experience-item">
+                    <h3>Industrial Trainee, <strong>Grameenphone Ltd.</strong></h3>
+                    <p><strong>August 2019 – September 2019, Dhaka</strong></p>
+                    <p>Gained experience in <strong>Radio Planning</strong>, <strong>Network Security</strong>, and <strong>IP Architecture</strong> (GSM, 3G, 4G, VoLTE).</p>
+                </div>
 
-        <div>
-            <h3>Industrial Trainee, <strong>Grameenphone Ltd.</strong></h3>
-            <p>Gained experience in <strong>Radio Planning</strong>, <strong>Network Security</strong>, and <strong>IP Architecture</strong> (GSM, 3G, 4G, VoLTE).</p>
-        </div>
-
-        <div>
-            <h3>Training Participator, <strong>Contessa BD</strong></h3>
-            <p>Completed foundational training in <strong>Digital Forensics</strong> and <strong>Cybersecurity Basics</strong>.</p>
+                <!-- Experience Item 6 -->
+                <div class="experience-item">
+                    <h3>Training Participator, <strong>Contessa BD</strong></h3>
+                    <p><strong>August 2019, Chittagong</strong></p>
+                    <p>Completed foundational training in <strong>Digital Forensics</strong> and <strong>Cybersecurity Basics</strong>.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <table>
-            <tr>
-                <th>Skill Category</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Programming</td>
-                <td>C, C++, Java, Python</td>
-            </tr>
-            <tr>
-                <td>Python Libraries</td>
-                <td>NumPy, Pandas, Matplotlib, Scikit-Learn, NetworkX, Pytorch, Torch Geometric</td>
-            </tr>
-            <tr>
-                <td>Web Development</td>
-                <td>HTML, CSS, PHP, Bootstrap, JavaScript, MySQL, Oracle, Node.js, React.js, MongoDB, Apache</td>
-            </tr>
-            <tr>
-                <td>IDE/Tools</td>
-                <td>VSCode, IntelliJ, CodeBlocks, MATLAB, Cisco Packet Tracer, Anaconda, Jupyter Notebook, NetBeans</td>
-            </tr>
-            <tr>
-                <td>Other</td>
-                <td>Microsoft Office Suite, Git/GitHub, Google Colab, Kaggle, Magnet Axiom, OpenGL</td>
-            </tr>
-            <tr>
-                <td>Soft Skills</td>
-                <td>Fluent in English, Quick Learner, Passionate about Learning, Time Management</td>
-            </tr>
-        </table>
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-content">
+                <ul>
+                    <li><strong>Programming:</strong> C, C++, Java, Python</li>
+                    <li><strong>Python Libraries:</strong> NumPy, Pandas, Matplotlib, Scikit-Learn, NetworkX, Pytorch, Torch Geometric</li>
+                    <li><strong>Web Development:</strong> HTML, CSS, PHP, Bootstrap, JavaScript, MySQL, Oracle, Node.js, React.js, MongoDB, Apache</li>
+                    <li><strong>Other Tools:</strong> VSCode, IntelliJ, MATLAB, Cisco Packet Tracer, Jupyter Notebook</li>
+                    <li><strong>Soft Skills:</strong> Fluent in English, Quick Learner, Time Management</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <h3>Master of Science, Computer Science</h3>
-        <p><strong>Brock University</strong>, September 2023 – September 2025</p>
-
-        <h3>Bachelor of Science, Computer Science and Engineering</h3>
-        <p><strong>Chittagong University of Engineering and Technology</strong>, February 2016 – September 2022</p>
+    <section id="education" class="section education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master of Science, Computer Science</h3>
+                <p><strong>Brock University</strong>, September 2023 – September 2025</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Science, Computer Science and Engineering</h3>
+                <p><strong>Chittagong University of Engineering and Technology</strong>, February 2016 – September 2022</p>
+            </div>
+        </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <p>Thank you for visiting my portfolio! Feel free to reach out for collaboration or inquiries.</p>
+        <div class="container">
+            <p>Thank you for visiting my portfolio! Feel free to reach out for collaboration or inquiries.</p>
+        </div>
     </footer>
 </body>
 </html>
