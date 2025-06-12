@@ -196,6 +196,28 @@ body {
     line-height: 1.6;
 }
 
+/* Publications Section */
+.section.publications {
+  padding: 3rem 0;
+}
+
+.publications .publication-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;      /* space between items */
+}
+
+.publication-item h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.publication-item p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+
 /* Skills Section */
 .skills {
     background: #f0f2f5;
