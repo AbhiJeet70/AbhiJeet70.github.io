@@ -1,317 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abhijeet Dhali's Personal Portfolio">
-    <meta name="keywords" content="Abhijeet Dhali, Portfolio, Machine Learning, GNN, Federated Learning, Research">
-    <meta name="author" content="Abhijeet Dhali">
-    <title>Abhijeet Dhali - Personal Portfolio</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Abhijeet Dhali - computer science graduate student, AI researcher, and technical professional."
+    />
+    <meta
+      name="keywords"
+      content="Abhijeet Dhali, Portfolio, Machine Learning, Graph Neural Networks, Technical Support, Research"
+    />
+    <meta name="author" content="Abhijeet Dhali" />
+    <title>Abhijeet Dhali | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              ink: "#111827",
+              surface: "#f7f8fb",
+              accent: "#0f766e"
+            },
+            boxShadow: {
+              soft: "0 16px 60px rgba(15, 23, 42, 0.10)"
+            }
+          }
+        }
+      };
+    </script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <style>
-        /* Menu Icon Styles */
-        .menu-icon {
-            font-size: 24px;
-            color: white;
-            cursor: pointer;
-            position: fixed;
-            top: 15px;
-            left: 15px;
-            z-index: 1001;
+      :root {
+        color-scheme: light;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        text-rendering: optimizeLegibility;
+        scroll-behavior: smooth;
+      }
+
+      :root.dark {
+        color-scheme: dark;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: #f7f8fb;
+      }
+
+      .dark body {
+        background: #0f172a;
+      }
+
+      ::selection {
+        background: rgba(15, 118, 110, 0.22);
+      }
+
+      .mesh-bg {
+        background-image:
+          linear-gradient(rgba(15, 118, 110, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(15, 118, 110, 0.08) 1px, transparent 1px);
+        background-size: 44px 44px;
+      }
+
+      .dark .mesh-bg {
+        background-image:
+          linear-gradient(rgba(45, 212, 191, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(45, 212, 191, 0.08) 1px, transparent 1px);
+      }
+
+      .role-marquee {
+        animation: floatText 16s linear infinite;
+      }
+
+      @keyframes floatText {
+        from {
+          transform: translateX(0);
         }
-
-        /* Menu Tray Styles */
-        .menu-tray {
-            position: fixed;
-            top: 0;
-            left: -300px; /* Hide off-screen */
-            width: 300px; /* Adjusted width */
-            height: 100%;
-            background: #282c34;
-            transition: left 0.3s ease;
-            z-index: 1000;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-            padding: 20px; /* Added padding */
-            overflow-y: auto; /* Allow scrolling if necessary */
-            display: flex; /* Use flex to ensure vertical layout */
-            flex-direction: column; /* Stack items vertically */
+        to {
+          transform: translateX(-50%);
         }
+      }
 
-        .menu-tray.open {
-            left: 0; /* Show on-screen */
+      section,
+      footer {
+        scroll-margin-top: 82px;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
         }
-
-        .menu-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #61dafb;
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
+      }
 
-        .close-menu {
-            cursor: pointer;
-            font-size: 24px;
-            color: #ffffff;
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 1ms !important;
+          transition-duration: 1ms !important;
+          scroll-behavior: auto !important;
         }
-
-        .nav-links {
-            list-style-type: none;
-            padding: 0; /* Reset padding */
-            margin-top: 20px; /* Space between header and links */
-        }
-
-        .nav-links li {
-            margin: 15px 0; /* Space between each link */
-        }
-
-        .nav-links a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            display: block; /* Make links block elements */
-            padding: 15px; /* Add padding for a button-like feel */
-            border-radius: 5px; /* Rounded corners */
-            transition: color 0.3s, background 0.3s;
-        }
-
-        .nav-links a:hover {
-            background: #61dafb; /* Change background on hover */
-            color: #282c34; /* Dark text on hover */
-        }
-
-        /* Media Query for PC Screen Sizes */
-        @media (min-width: 768px) {
-            .menu-tray {
-                width: 300px; /* Fixed width for PC */
-                left: -300px; /* Still hidden off-screen */
-            }
-
-            .menu-tray.open {
-                left: 0; /* Show on-screen when open */
-            }
-        }
-
-        /* Additional styling for the rest of your site */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .section {
-            padding: 60px 0;
-            border-bottom: 1px solid #ddd; /* Added separator between sections */
-        }
-
-        .brand {
-            font-size: 24px;
-            color: #ffffff;
-        }
-
-        /* Add other styles as necessary for your portfolio */
+      }
     </style>
-</head>
-<body>
-<!-- Navigation Menu -->
-<div class="menu-icon" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-</div>
-<div class="menu-tray" id="menuTray">
-    <div class="menu-header">
-        <span class="brand">Abhijeet Dhali</span>
-        <span class="close-menu" onclick="toggleMenu()">&times;</span>
-    </div>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            <li><a href="https://abhijeet70.github.io/" target="_blank" onclick="toggleMenu()">Home</a></li>
-        </ul>
-    </nav>
-</div>
-
-<!-- About Me Section -->
-<section id="about" class="section about">
-    <div class="container">
-        <div class="about-content">
-            <img src="Images/professional_DP.jpg" class="profile-picture" alt="Profile Picture">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>I am a <strong>Master's Student</strong> in <strong>Department of Computer Science</strong> at <strong>Brock University</strong>, actively working on cutting-edge research in <strong>Graph Neural Networks, Federated Learning</strong>, and <strong>Knowledge Graph Representation</strong>. I have a strong background in machine learning, data science, and software development, and I enjoy contributing to open-source projects and collaborating on innovative solutions.</p>
-                <!-- Social Media Links -->
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/abhijeet-dhali" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/AbhiJeet70" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:abhi041096@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Graphics Section -->
-<section id="graphics" class="section graphics">
-    <div class="container">
-        <div class="graphics-content">
-            <div class="graphic-item">
-                <h3>Graph Neural Network</h3>
-                <img src="Images/GNN.gif" alt="Graph Animation" class="graphic-image">
-                <p>A demonstration of message passing of Graph Neural Networks (GNN).</p>
-            </div>
-            <div class="graphic-item">
-                <h3>Node Classification Task</h3>
-                <img src="Images/NodeGNN.gif" alt="Node Classification" class="graphic-image">
-                <p>A representation of the node classification task using GNN.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="section experience">
-    <div class="container">
-        <h2>Experience</h2>
-        <div class="experience-content">
-            <div class="experience-item">
-                <h3>Graduate Research Assistant, <strong>Brock CS Department</strong></h3>
-                <p>Ongoing research in <strong>Graph Neural Networks (GNN)</strong>, <strong>Federated Learning with Graph Data</strong>, and the <strong>Robustness of GNN</strong>.</p>
-                <p>Actively contributing to a cutting-edge research project under the guidance of my thesis supervisor, investigating <strong>backdoor attacks</strong> on critical infrastructure like <strong>EV charging stations</strong> and <strong>airports</strong> using GNNs.</p>
-                <p>Focusing on improving the robustness of GNNs and evaluating federated learning algorithms for decentralized environments.</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Interim Secretary, <strong>Graduate Math and Science Students Brock University (GRAMSS)</strong></h3>
-                <p>Organizer of <strong>FMS GRaD Conference 2024</strong> at Brock University.</p>
-                <p>Managed meetings, prepared agendas, and supported faculty in organizing seminars.</p>
-                <p>Contributed to strategic planning and collaboration initiatives for the GRAMSS community.</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Research Project, <strong>Undergraduate Thesis</strong></h3>
-                <p><strong>March 2020 – Dec 2021</strong></p>
-                <p>Developed a <strong>GPS-Guided Autonomous Drone</strong> for delivery purposes using a smartphone app for GPS tracking.</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Machine Learning Project, <strong>Undergraduate Course Project</strong></h3>
-                <p><strong>April 2020 – April 2021</strong></p>
-                <p>Created a <strong>Machine Learning-based Diabetes Prediction Web Application</strong> using supervised learning and Artificial Neural Networks (ANN).</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Industrial Trainee, <strong>Grameenphone Ltd.</strong></h3>
-                <p><strong>August 2019 – September 2019, Dhaka</strong></p>
-                <p>Gained experience in <strong>Radio Planning</strong>, <strong>Network Security</strong>, and <strong>IP Architecture</strong> (GSM, 3G, 4G, VoLTE).</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Training Participator, <strong>Contessa BD</strong></h3>
-                <p><strong>August 2019, Chittagong</strong></p>
-                <p>Completed foundational training in <strong>Digital Forensics</strong> and <strong>Cybersecurity Basics</strong>.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Publications Section -->
-<section id="publications" class="section publications">
-  <div class="container">
-    <h2>Publications</h2>
-    <div class="publication-content">
-
-      <div class="publication-item">
-        <h3>
-          The Power of Many: Investigating Defense Mechanisms for Resilient Graph Neural Networks
-          <a href="https://doi.org/10.1109/BigData62323.2024.10825720" target="_blank">[Link]</a>
-        </h3>
-        <p>Outlier-detection (DOMINANT) and homophily-based (Prune / Prune+LD) defenses each block out-of-distribution and in-distribution backdoors; combining them offers end-to-end GNN protection.</p>
-      </div>
-
-      <div class="publication-item">
-        <h3>
-          How Robust Are Higher-Order Graph Neural Networks to Backdoor Attacks?
-          <a href="https://caiac.pubpub.org/pub/nvckf4bi" target="_blank">[Link]</a>
-        </h3>
-        <p>HOGNNs maintain low attack success rates (vs. up to 100 % in standard GNNs) and stable accuracy, making them ideal for security-critical deployments.</p>
-      </div>
-
-      <div class="publication-item">
-        <h3>
-          SAGNN+CS: A Resilient Graph Neural Network Framework Against Backdoor Threats
-          <a href="https://caiac.pubpub.org/pub/s0xf3xtc" target="_blank">[Link]</a>
-        </h3>
-        <p>Introducing a cosine-similarity subgraph extraction in HOGNNs that cuts backdoor success rates dramatically while preserving top-tier accuracy on large benchmarks.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Skills Section -->
-<section id="skills" class="section skills">
-    <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-content">
-            <ul>
-                <li><strong>Programming:</strong> C, C++, Java, Python</li>
-                <li><strong>Python Libraries:</strong> NumPy, Pandas, Matplotlib, Scikit-Learn, NetworkX, Pytorch, Torch Geometric</li>
-                <li><strong>Web Development:</strong> HTML, CSS, PHP, Bootstrap, JavaScript, MySQL, Oracle, Node.js, React.js, MongoDB, Apache</li>
-                <li><strong>Other Tools:</strong> VSCode, IntelliJ, MATLAB, Cisco Packet Tracer, Jupyter Notebook</li>
-                <li><strong>Soft Skills:</strong> Fluent in English, Quick Learner, Time Management</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Education Section -->
-<section id="education" class="section education">
-    <div class="container">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>Master of Science, Computer Science</h3>
-            <p><strong>Brock University</strong>, September 2023 – September 2025</p>
-        </div>
-        <div class="education-item">
-            <h3>Bachelor of Science, Computer Science and Engineering</h3>
-            <p><strong>Chittagong University of Engineering and Technology</strong>, February 2016 – September 2022</p>
-        </div>
-    </div>
-</section>
-
-<!-- Footer Section -->
-<footer>
-    <div class="container">
-        <p>Thank you for visiting my portfolio! Feel free to reach out for collaboration or inquiries.</p>
-    </div>
-</footer>
-
-<script>
-    function toggleMenu() {
-        const menuTray = document.getElementById('menuTray');
-        menuTray.classList.toggle('open'); // Toggle the "open" class
-    }
-</script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="src/data/portfolio-data.js"></script>
+    <script type="text/babel" data-presets="react" src="src/main.jsx"></script>
+  </body>
 </html>
